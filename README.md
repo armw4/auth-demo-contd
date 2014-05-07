@@ -36,15 +36,13 @@ The app will boot @ `localhost:3000`
 
 should render the home page:
 
-```
-Express
-
-Welcome to Express
-```
+![index](screenshots/index.png)
 
 #### /users
 
 should result in a `404` (forbidden)
+
+![users forbidden](screenshots/users-forbidden.png)
 
 ### TODO
 
