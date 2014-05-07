@@ -1,19 +1,19 @@
 ### Key Components
 
-* identity middleware - loads the current user’s identity from remote source.
+* `identity middleware` - loads the current user’s identity from remote source.
 
 ```
 middleware/security/identity.js`
 ```
 
-* authorization middleware - authorizes request. hands off whitelist and current user’s
+* `authorization middleware` - authorizes request. hands off whitelist and current user’s
 roles to `authorizer`.
 
 ```
 middleware/security/authorization.js
 ```
 
-* authorizer - contains core authorization logic. compares whiltelist against user’s roles
+* `authorizer` - contains core authorization logic. compares whiltelist against user’s roles
 and determines if there are any in common. so long as there’s at least 1, then the current
 user is accepted.
 
