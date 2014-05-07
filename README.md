@@ -40,7 +40,7 @@ should render the home page:
 
 #### /users
 
-should result in a `404` (forbidden)
+should result in a `403` (forbidden)
 
 ![users forbidden](screenshots/users-forbidden.png)
 
