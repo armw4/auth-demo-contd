@@ -3,3 +3,18 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  #auth-demo.well(ng-if="roles.hasDemo")
+    | Look...I'm a Twitter bootstrap well and I'm only visible
+    | because the current user has the Auth_Demo role.
+  #auth-admin.well(ng-if="roles.hasAdmin")
+    | Look...I'm a Twitter bootstrap well and I'm only visible
+    | because the current user has the Auth_Admin role.
+  #auth-auth-role.well(ng-if="roles.hasAuthRole")
+    | Look...I'm a Twitter bootstrap well and I'm only visible
+    | because the current user has the Auth_AuthRole role.
+  #auth-play-house.well(ng-if="roles.hasPlayHouse")
+    | Look...I'm a Twitter bootstrap well and I'm only visible
+    | because the current user has the Auth_PlayHouse role.
+
+  script.
+    var authBundle = !{ JSON.stringify(authBundle) }
