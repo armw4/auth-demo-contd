@@ -21,6 +21,14 @@ user is accepted.
 lib/security/authorizer.js
 ```
 
+### Post git clone
+
+```sh
+$ cd <app-root>
+$ npm install
+$ bower install
+```
+
 ### Starting the app
 
 ```sh
