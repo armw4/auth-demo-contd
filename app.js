@@ -8,6 +8,7 @@ var identity     = require('./middleware/security/identity');
 
 var routes = require('./routes/index');
 var users  = require('./routes/users');
+var fooBar = require('./routes/foo-bar');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/foo', fooBar);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
